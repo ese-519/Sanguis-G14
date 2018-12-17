@@ -26,7 +26,13 @@ In the upcoming sections, we would be expalining the above steps with respect to
 
 # 1) Setting up the MQTT broker
 
-HiveMQ, CloudMQTT and WS IoT are some of the popular brokers that are availbale for users for free. In our application we used the "CloudMQTT cute cat" version. It can be setup by following these steps:
-> 
+HiveMQ, CloudMQTT and AWS IoT are some of the popular brokers that are availbale for users for free. In our application we used the "CloudMQTT cute cat" version. It can be setup by following these steps:
+> Go to https://www.cloudmqtt.com/
+> Create an account and login into your account
+> In order to use the broker, it is necessary to first create an instance. Create an instance
+> Upon succesful creation, you will see all the instance details which constitutes the broker server address, the websocket port number, SSL port number etc
+> In the particular instance, you have the option to create different users and different topics for the users. This can be done by going to the "Users and ACL" tab.
+> Creating users with a username and password allows a secure connection that is based on authentication.Make sure to give the user both read and write access if both data writing and reading is happening based on the same credentials.
+> The broker is now set! Note down the server address, the port number and the user details for further use.
 
-
+# 2) Setting up the Publisher on Raspberry Pi using Python
